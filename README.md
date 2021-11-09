@@ -1,1 +1,1 @@
-# react-spritle-devops
+# react-devops
