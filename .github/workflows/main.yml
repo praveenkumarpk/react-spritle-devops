@@ -23,5 +23,5 @@ jobs:
           format: raw
           repository: wheels
           coordinates: groupId=com.ex artifactId-app version=1.0
-          assets: extension=json
+          assets: filename=package.json
           filenmae: package.json
