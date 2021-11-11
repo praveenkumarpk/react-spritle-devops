@@ -22,6 +22,6 @@ jobs:
           password: ${{secrets.password}}
           format: raw
           repository: wheels
-          coordinates: directory=wheels
+          coordinates: directory=wheels version=v1.0
           assets: filename=test
           filename: ./test
