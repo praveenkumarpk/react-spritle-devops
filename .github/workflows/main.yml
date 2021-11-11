@@ -24,3 +24,4 @@ jobs:
           repository: wheels
           assets: extension=zip
           filename: package.json
+          coordinates: Cversion=1.0
