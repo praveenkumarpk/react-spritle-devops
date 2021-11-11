@@ -22,6 +22,6 @@ jobs:
           password: ${{secrets.password}}
           format: raw
           repository: wheels
-          assets: extension=zip
+          assets: extension=json
           filename: package.json
           coordinates: Cversion=1.0
