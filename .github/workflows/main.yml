@@ -12,9 +12,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Run a one-line script
-        run: echo Hello, world!
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+      - name: Checkout Success
+        run: ls -l
+
+    steps:
+      - name: Nexus Push
+        uses: sonatype-nexus-community/nexus-repo-github-action@master
+        with:
+          serverUrl: http://18.207.100.59:8081/
+          username: admin
+          password: ${{secrets.password}}
+          format: raw
+          repository: wheels
+          assets: extension=zip
+          filename: package.json
