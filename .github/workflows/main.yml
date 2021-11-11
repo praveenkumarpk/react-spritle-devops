@@ -22,6 +22,6 @@ jobs:
           password: ${{secrets.password}}
           format: raw
           repository: wheels
+          coordinates: groupId=com.ex artifactId-app version=1.0
           assets: extension=json
-          filename: package.json
-          coordinates: version=1.0
+          filenmae: package.json
