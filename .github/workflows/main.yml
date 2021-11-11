@@ -24,4 +24,4 @@ jobs:
           repository: wheels
           assets: extension=json
           filename: package.json
-          coordinates: Cversion=1.0
+          coordinates: version=1.0
