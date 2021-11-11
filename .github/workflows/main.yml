@@ -23,5 +23,5 @@ jobs:
           format: raw
           repository: wheels
           coordinates: directory=wheels
-          assets: test
+          assets: filename=test
           filename: ./test
