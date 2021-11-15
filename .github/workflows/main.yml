@@ -21,8 +21,8 @@ jobs:
           serverUrl: http://54.157.119.108:8081/nexus/
           username: admin
           password: ${{secrets.password}}
-          format: site
-          repository: wheel
-          coordinates: directory=releases
+          format: maven2
+          repository: wheels
+          coordinates: groupId=releases artifactId=app version=1.0
           assets: filename=test
           filename: ./test
